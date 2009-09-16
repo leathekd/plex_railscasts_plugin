@@ -7,5 +7,3 @@ Railscasts.com Plugin for Plex
 
 3. Put "Railscasts.bundle" folder into: 
         <home>/Library/Application Support/Plex Media Server/Plug-ins
-
-4. Restart Plex
