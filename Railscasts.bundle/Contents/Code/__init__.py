@@ -9,14 +9,14 @@ ICON           = "icon-default.png"
 
 ####################################################################################################
 def Start():
-  Plugin.AddPrefixHandler(VIDEO_PREFIX, VideoMenu, "Railscasts", ICON, "bg-default.png")
+  Plugin.AddPrefixHandler(VIDEO_PREFIX, VideoMenu, "Railscasts", ICON, "art-default.png")
   Plugin.AddViewGroup("Details", viewMode="InfoList", mediaType="items")
-  MediaContainer.art    = R('bg-default.png')
+  MediaContainer.art    = R('art-default.png')
   MediaContainer.title1 = 'Railscasts'
   HTTP.SetCacheTime(CACHE_INTERVAL)
   
 def VideoMenu():
-    dir = MediaContainer(mediaType="video")  
+    dir = MediaContainer(mediaType="video", viewGroup="Details")  
     for item in XML.ElementFromURL(BASE_URL, False, errors='ignore').xpath('//item'):
       title       = item.find('title').text.strip()
       date        = item.find('pubDate').text.strip()
