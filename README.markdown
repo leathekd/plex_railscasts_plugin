@@ -1,9 +1,5 @@
-Railscasts.com Plugin for Plex
-=====================================
+# This plugin is outdated please see the maintained version
 
-1. Download a zip file using the "Download" button above. 
+https://github.com/plexinc-plugins/Railscasts.bundle
 
-2. Decompress the zip file
-
-3. Put "Railscasts.bundle" folder into: 
-        <home>/Library/Application Support/Plex Media Server/Plug-ins
+I wrote the original code 3+ years ago and the fine folks on the Plex team have maintained it ever since.
